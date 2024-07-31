@@ -9,8 +9,8 @@ Go to your RAGE:MP installation and find `server-files`, from there copy the fil
 [If you do not have the server-files directory, follow this guide.](https://wiki.rage.mp/index.php?title=Getting_Started_with_Server)
 
 # Developing
-`bun run build` to build your project.
-`bun run dev` to watch over and automatically build when changes occur.
+* `bun run build` to build your project.
+* `bun run dev` to watch over and automatically build when changes occur.
 
 
 This project was created using `bun init` in bun v1.1.16. [Bun](https://bun.sh) is a fast all-in-one JavaScript runtime.
