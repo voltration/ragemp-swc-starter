@@ -1,0 +1,28 @@
+{
+  "name": "ragemp-swc-starter",
+  "scripts": {
+    "clean": "rimraf dist/client_packages && rimraf dist/packages",
+    "copyconf": "cp conf.json dist",
+    "mkdir": "mkdir -p dist/packages/core",
+    "rename": "mv dist/client dist/client_packages && mv dist/server/* dist/packages/core && rimraf dist/server",
+
+    "build": "npm run clean && npx swc src -d dist --strip-leading-paths && npm run copyconf && npm run mkdir && npm run rename",
+    "watch": "chokidar 'src/**/*' 'conf.json' -c 'npm run build'",
+    "dev": "npm run build && npm run watch"
+  },
+  "devDependencies": {
+    "@types/bun": "latest"
+  },
+  "peerDependencies": {
+    "typescript": "^5.0.0"
+  },
+  "dependencies": {
+    "@ragempcommunity/types-client": "^2.1.8",
+    "@ragempcommunity/types-server": "^2.1.8",
+    "@swc/cli": "^0.4.0",
+    "@swc/core": "^1.7.3",
+    "chokidar-cli": "^3.0.0",
+    "concurrently": "^8.2.2",
+    "rimraf": "^6.0.1"
+  }
+}
