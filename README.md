@@ -5,6 +5,7 @@ A simple and fast RAGE:MP starter that uses SWC to bundle and compile your proje
 1. `git clone https://github.com/voltration/ragemp-swc-starter.git` to install the repo
 2. `cd ragemp-swc-starter` to move into the directory
 3. `bun i (or npm install, pnpm i, etc.)` to install the dependencies.
+4. `bun run build` to create the dist directory
 
 Go to your RAGE:MP installation and find `server-files`, from there copy the files located inside, and place them in `dist` in this project.
 
