@@ -1,5 +1,5 @@
 # ragemp-swc-starter
-A simple and fast RAGE:MP starter to get you going.
+A simple and fast RAGE:MP starter that uses SWC to bundle and compile your project.
 
 # Installation
 `bun i (or npm install, pnpm i, etc.)` to install the dependencies.
