@@ -1,3 +1,6 @@
+# Notice
+Use https://github.com/voltration/ragemp-esbuild-starter instead
+
 # ragemp-swc-starter
 A simple and fast RAGE:MP starter that uses SWC to bundle and compile your project.
 
